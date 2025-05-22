@@ -1,6 +1,6 @@
 # QuickBite: Recipe Finder App
 
-![QuickBite Logo](public/vite.svg)
+![QuickBite Logo](public/main.png)
 
 QuickBite is a modern, user-friendly recipe finder application that helps users discover easy and quick recipes based on their food preferences. Built with React, TypeScript, and HeroUI, this application fetches recipe data from the Forkify API and presents it in a beautiful, responsive interface.
 
@@ -26,12 +26,14 @@ QuickBite is a modern, user-friendly recipe finder application that helps users 
 ## 🔧 Installation & Setup
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/AhmedEsam2002/quickbite.git
    cd quickbite
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install
    # or
@@ -41,6 +43,7 @@ QuickBite is a modern, user-friendly recipe finder application that helps users 
    ```
 
 3. **Run the development server**
+
    ```bash
    npm run dev
    # or
@@ -85,6 +88,7 @@ quickbite/
 This project uses the [Forkify API](https://forkify-api.herokuapp.com/) for fetching recipe data.
 
 **Example Query:**
+
 ```
 https://forkify-api.herokuapp.com/api/search?q=pizza
 ```
