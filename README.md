@@ -1,50 +1,121 @@
-# Vite & HeroUI Template
+# QuickBite: Recipe Finder App
 
-This is a template for creating applications using Vite and HeroUI (v2).
+![QuickBite Logo](public/vite.svg)
 
-[Try it on CodeSandbox](https://githubbox.com/frontio-ai/vite-template)
+QuickBite is a modern, user-friendly recipe finder application that helps users discover easy and quick recipes based on their food preferences. Built with React, TypeScript, and HeroUI, this application fetches recipe data from the Forkify API and presents it in a beautiful, responsive interface.
 
-## Technologies Used
+## 📋 Features
 
-- [Vite](https://vitejs.dev/guide/)
-- [HeroUI](https://heroui.com)
-- [Tailwind CSS](https://tailwindcss.com)
-- [Tailwind Variants](https://tailwind-variants.org)
-- [TypeScript](https://www.typescriptlang.org)
-- [Framer Motion](https://www.framer.com/motion)
+- **Food Type Selection**: Choose from a wide variety of food ingredients using a dropdown menu
+- **Recipe Gallery**: View a responsive grid of recipe cards with images and descriptions
+- **Dynamic Search**: Instantly search and find recipes based on selected ingredients
+- **Responsive Design**: Fully responsive layout that works on mobile, tablet, and desktop devices
+- **Dark/Light Theme**: Toggle between dark and light themes for comfortable viewing
 
-## How to Use
+## 🛠️ Technologies Used
 
-To clone the project, run the following command:
+- **Framework**: React 18
+- **Language**: TypeScript
+- **Bundler**: Vite
+- **UI Library**: HeroUI Components
+- **Styling**: Tailwind CSS
+- **Routing**: React Router DOM
+- **Animations**: Framer Motion
+- **API**: Forkify API for recipe data
 
-```bash
-git clone https://github.com/frontio-ai/vite-template.git
+## 🔧 Installation & Setup
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/AhmedEsam2002/quickbite.git
+   cd quickbite
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   # or
+   yarn install
+   # or
+   pnpm install
+   ```
+
+3. **Run the development server**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   # or
+   pnpm dev
+   ```
+
+4. **Open your browser**
+   Navigate to [http://localhost:5173](http://localhost:5173) to see the application running.
+
+## 🏗️ Project Structure
+
+```
+quickbite/
+├── public/            # Static assets
+├── src/
+│   ├── APIs/          # API calls and data fetching
+│   ├── components/    # Reusable UI components
+│   ├── config/        # Site configuration
+│   ├── layouts/       # Page layouts
+│   ├── pages/         # Application pages
+│   ├── styles/        # Global styles
+│   ├── types/         # TypeScript type definitions
+│   ├── App.tsx        # Main App component
+│   └── main.tsx       # Application entry point
+├── .eslintrc.json     # ESLint configuration
+├── package.json       # Project dependencies and scripts
+├── tailwind.config.js # Tailwind CSS configuration
+├── tsconfig.json      # TypeScript configuration
+└── vite.config.ts     # Vite configuration
 ```
 
-### Install dependencies
+## 🔍 Usage
 
-You can use one of them `npm`, `yarn`, `pnpm`, `bun`, Example using `npm`:
+1. Select a food type from the dropdown menu
+2. Browse through the gallery of recipes
+3. Click on a recipe card to view details
 
-```bash
-npm install
+## 📱 API Reference
+
+This project uses the [Forkify API](https://forkify-api.herokuapp.com/) for fetching recipe data.
+
+**Example Query:**
+```
+https://forkify-api.herokuapp.com/api/search?q=pizza
 ```
 
-### Run the development server
+## 🛠️ Build for Production
 
 ```bash
-npm run dev
+npm run build
 ```
 
-### Setup pnpm (optional)
+This will generate optimized production files in the `dist` directory.
 
-If you are using `pnpm`, you need to add the following code to your `.npmrc` file:
+## 🔄 Future Enhancements
 
-```bash
-public-hoist-pattern[]=*@heroui/*
-```
+- Add recipe details page
+- Implement user authentication
+- Add favorites functionality
+- Implement search history
+- Create shopping list feature
 
-After modifying the `.npmrc` file, you need to run `pnpm install` again to ensure that the dependencies are installed correctly.
+## 👨‍💻 Author
 
-## License
+- **Ahmed Esam** - [GitHub Profile](https://github.com/AhmedEsam2002)
 
-Licensed under the [MIT license](https://github.com/frontio-ai/vite-template/blob/main/LICENSE).
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgements
+
+- [HeroUI](https://heroui.com) for the beautiful UI components
+- [Forkify API](https://forkify-api.herokuapp.com/) for providing recipe data
+- [Vite](https://vitejs.dev/) for the fast build tool
+- [Tailwind CSS](https://tailwindcss.com/) for the utility-first CSS framework
