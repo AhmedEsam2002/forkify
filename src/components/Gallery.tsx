@@ -1,4 +1,5 @@
-import { Card, CardHeader, Image } from "@heroui/react";
+import { Card, CardHeader } from "@heroui/card";
+import { Image } from "@heroui/image";
 import { useState, useEffect } from "react";
 
 interface GalleryProps {
@@ -48,7 +49,7 @@ publisher_url	"http://www.101cookbooks.com"
         <Card
           className="h-[300px]"
           key={recipe.recipe_id}
-          isisHoverable
+          isHoverable
           isPressable
         >
           <CardHeader className="absolute z-10 top-1 flex-col !items-start">

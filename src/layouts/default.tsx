@@ -1,7 +1,6 @@
 import { Link } from "@heroui/link";
-
 import { Navbar } from "@/components/navbar";
-import { title, subtitle } from "@/components/primitives";
+
 export default function DefaultLayout({
   children,
 }: {

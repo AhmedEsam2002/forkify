@@ -1,10 +1,10 @@
-import { Link } from "@heroui/link";
+import { Link } from "@heroui/react";
 import {
   Navbar as HeroUINavbar,
   NavbarBrand,
   NavbarContent,
   NavbarItem,
-} from "@heroui/navbar";
+} from "@heroui/react";
 
 import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "@/components/theme-switch";

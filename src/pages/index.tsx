@@ -1,17 +1,12 @@
-import { title, subtitle } from "@/components/primitives";
+import { title } from "@/components/primitives";
 import Gallery from "@/components/Gallery";
 import DefaultLayout from "@/layouts/default";
 import { Select, SelectItem } from "@heroui/select";
 import { queries } from "@/APIs/quires";
 import { useState } from "react";
-import { useEffect } from "react";
+
 export default function IndexPage() {
-  interface Query {
-    key: string;
-    label: string;
-  }
   const [searchQuery, setSearchQuery] = useState<string>("basil");
-  const quires: Query[] = queries;
   return (
     <DefaultLayout>
       <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
@@ -24,7 +19,7 @@ export default function IndexPage() {
         <Select
           className="w-full"
           label="Select Food Type"
-          onChange={(e) => {
+          onChange={(e: React.ChangeEvent<HTMLSelectElement>) => {
             setSearchQuery(e.target.value);
           }}
           defaultSelectedKeys={[searchQuery]}
